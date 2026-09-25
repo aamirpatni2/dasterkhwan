@@ -17,21 +17,125 @@
     "maps_url": "https://www.google.com/maps/search/?api=1&query=Zaibunnisa+Street+Saddar+Karachi"
   },
   "hours": [
-    { "days": "Monday - Thursday", "open": "12:00", "close": "23:00" },
-    { "days": "Friday", "open": "14:30", "close": "00:00" },
-    { "days": "Saturday - Sunday", "open": "12:00", "close": "00:00" }
+    {
+      "days": "Monday - Thursday",
+      "open": "12:00",
+      "close": "23:00"
+    },
+    {
+      "days": "Friday",
+      "open": "14:30",
+      "close": "00:00"
+    },
+    {
+      "days": "Saturday - Sunday",
+      "open": "12:00",
+      "close": "00:00"
+    }
   ],
   "currency": "PKR",
   "prices_include_tax": true,
   "menu": [
-    { "id": "chicken-biryani", "name": "Chicken Dum Biryani", "category": "Rice", "price": 950, "description": "Aged basmati layered with spiced chicken, potato and saffron, sealed and cooked on dum." },
-    { "id": "beef-nihari", "name": "Beef Nihari", "category": "Curries", "price": 1250, "description": "Shank simmered overnight, topped with ginger, green chilli and fresh lemon. Served with naan." },
-    { "id": "chicken-karahi-half", "name": "Chicken Karahi (Half)", "category": "Curries", "price": 1800, "description": "Cooked to order in a wok with tomatoes, green chillies and black pepper." },
-    { "id": "seekh-kabab", "name": "Seekh Kabab (4 pcs)", "category": "BBQ", "price": 850, "description": "Hand-minced beef with herbs, grilled on skewers over live charcoal." },
-    { "id": "haleem", "name": "Haleem", "category": "Curries", "price": 700, "description": "Wheat, lentils and beef slow-pounded into a rich stew, finished with fried onions." },
-    { "id": "bun-kabab", "name": "Bun Kabab", "category": "Street Food", "price": 450, "description": "Karachi's street classic: lentil-beef patty, egg, chutney and onions in a toasted bun." },
-    { "id": "garlic-naan", "name": "Garlic Naan", "category": "Breads", "price": 150, "description": "Fresh from the tandoor, brushed with garlic butter and coriander." },
-    { "id": "shahi-kheer", "name": "Shahi Kheer", "category": "Desserts", "price": 400, "description": "Rice slow-cooked in milk with cardamom, topped with pistachio and almond." }
+    {
+      "id": "chicken-broast",
+      "name": "Chicken Broast",
+      "category": "Broast",
+      "price": 850,
+      "unit": "half",
+      "description": "Whole or half chicken, marinated in our signature spice blend and pressure-fried to golden, juicy perfection. Served with coleslaw and fries."
+    },
+    {
+      "id": "seekh-kabab",
+      "name": "Seekh Kabab",
+      "category": "BBQ & Grill",
+      "price": 480,
+      "unit": "6 pcs",
+      "spicy": true,
+      "description": "Minced beef and lamb mixed with fresh herbs, green chillies and aromatic spices, char-grilled over live coals. Served with mint chutney and naan."
+    },
+    {
+      "id": "chicken-karahi",
+      "name": "Chicken Karahi",
+      "category": "Karahi",
+      "price": 950,
+      "unit": "full",
+      "spicy": true,
+      "description": "Tender chicken slow-cooked in tomatoes, ginger, garlic and traditional spices in a cast-iron wok. Rich, thick gravy, best enjoyed with fresh naan."
+    },
+    {
+      "id": "beef-karahi",
+      "name": "Beef Karahi",
+      "category": "Karahi",
+      "price": 1100,
+      "unit": "full",
+      "spicy": true,
+      "description": "Succulent beef in a bold tomato-and-spice gravy with fresh ginger and green chillies."
+    },
+    {
+      "id": "chicken-biryani",
+      "name": "Aromatic Chicken Biryani",
+      "category": "Rice & Biryani",
+      "price": 320,
+      "unit": "plate",
+      "description": "Long-grain basmati rice layered with spiced chicken, fried onions, saffron and whole spices. Slow-cooked dum-style for deep, fragrant flavour."
+    },
+    {
+      "id": "beef-haleem",
+      "name": "Beef Haleem",
+      "category": "Rice & Biryani",
+      "price": 280,
+      "unit": "bowl",
+      "seasonal": true,
+      "description": "Slow-cooked beef and lentil stew seasoned with whole spices, garnished with crispy onions and fresh coriander."
+    },
+    {
+      "id": "zinger-burger",
+      "name": "Zinger Burger",
+      "category": "Pizza & Burgers",
+      "price": 350,
+      "unit": "burger",
+      "description": "Crispy spiced chicken fillet, shredded lettuce, tomato and special house sauce stacked in a toasted sesame bun."
+    },
+    {
+      "id": "beef-smash-burger",
+      "name": "Beef Smash Burger",
+      "category": "Pizza & Burgers",
+      "price": 420,
+      "unit": "burger",
+      "description": "Double smashed beef patty with caramelised onions, cheese, pickles and smoky burger sauce."
+    },
+    {
+      "id": "chicken-cheese-pizza",
+      "name": "Chicken Cheese Pizza",
+      "category": "Pizza & Burgers",
+      "price": 750,
+      "unit": "medium",
+      "description": "Thin crust loaded with spiced chicken tikka, mozzarella, capsicum, onions and a tangy tomato base."
+    },
+    {
+      "id": "chicken-paratha-roll",
+      "name": "Chicken Paratha Roll",
+      "category": "Street Food",
+      "price": 220,
+      "unit": "roll",
+      "description": "Flaky layered paratha wrapped around spiced chicken tikka, fresh onion rings, green chutney and lemon."
+    },
+    {
+      "id": "corn-soup",
+      "name": "Creamy Corn Soup",
+      "category": "Starters",
+      "price": 160,
+      "unit": "bowl",
+      "description": "Thick, velvety sweet corn soup with black pepper and chilli vinegar. A warm, comforting starter."
+    },
+    {
+      "id": "shakes-drinks",
+      "name": "Shakes & Drinks",
+      "category": "Drinks",
+      "price": 120,
+      "unit": "onwards",
+      "description": "Fresh fruit milkshakes, chilled soft drinks, mango lassi and seasonal juices."
+    }
   ],
   "policies": {
     "reservations": "Taken by phone or through Dastarkhwan Assistant. Every request is confirmed by staff before it is final.",
