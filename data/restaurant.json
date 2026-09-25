@@ -1,0 +1,41 @@
+{
+  "name": "Karachi Dastarkhwan",
+  "tagline": "The taste of Karachi, served on one dastarkhwan.",
+  "established": 1998,
+  "cuisine": "Karachi / Pakistani (Mughlai, BBQ, street food)",
+  "halal": true,
+  "contact": {
+    "phone": "+92 300 0000000",
+    "email": "hello@karachidastarkhwan.example"
+  },
+  "address": {
+    "street": "Shop 14, Zaibunnisa Street",
+    "area": "Saddar",
+    "city": "Karachi",
+    "postal_code": "74400",
+    "country": "Pakistan",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Zaibunnisa+Street+Saddar+Karachi"
+  },
+  "hours": [
+    { "days": "Monday - Thursday", "open": "12:00", "close": "23:00" },
+    { "days": "Friday", "open": "14:30", "close": "00:00" },
+    { "days": "Saturday - Sunday", "open": "12:00", "close": "00:00" }
+  ],
+  "currency": "PKR",
+  "prices_include_tax": true,
+  "menu": [
+    { "id": "chicken-biryani", "name": "Chicken Dum Biryani", "category": "Rice", "price": 950, "description": "Aged basmati layered with spiced chicken, potato and saffron, sealed and cooked on dum." },
+    { "id": "beef-nihari", "name": "Beef Nihari", "category": "Curries", "price": 1250, "description": "Shank simmered overnight, topped with ginger, green chilli and fresh lemon. Served with naan." },
+    { "id": "chicken-karahi-half", "name": "Chicken Karahi (Half)", "category": "Curries", "price": 1800, "description": "Cooked to order in a wok with tomatoes, green chillies and black pepper." },
+    { "id": "seekh-kabab", "name": "Seekh Kabab (4 pcs)", "category": "BBQ", "price": 850, "description": "Hand-minced beef with herbs, grilled on skewers over live charcoal." },
+    { "id": "haleem", "name": "Haleem", "category": "Curries", "price": 700, "description": "Wheat, lentils and beef slow-pounded into a rich stew, finished with fried onions." },
+    { "id": "bun-kabab", "name": "Bun Kabab", "category": "Street Food", "price": 450, "description": "Karachi's street classic: lentil-beef patty, egg, chutney and onions in a toasted bun." },
+    { "id": "garlic-naan", "name": "Garlic Naan", "category": "Breads", "price": 150, "description": "Fresh from the tandoor, brushed with garlic butter and coriander." },
+    { "id": "shahi-kheer", "name": "Shahi Kheer", "category": "Desserts", "price": 400, "description": "Rice slow-cooked in milk with cardamom, topped with pistachio and almond." }
+  ],
+  "policies": {
+    "reservations": "Taken by phone or through Dastarkhwan Assistant. Every request is confirmed by staff before it is final.",
+    "orders": "Takeaway orders are requests until staff confirm them by phone.",
+    "allergies": "Guests should tell staff about any allergies. Dishes may contain nuts, dairy, gluten and egg."
+  }
+}
