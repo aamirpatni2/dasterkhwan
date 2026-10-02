@@ -21,7 +21,7 @@
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 1px); } /* +1px header border */
 
 body {
   margin: 0;
@@ -76,7 +76,7 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(28, 27, 25, .96);
+  background: var(--charcoal);
   border-bottom: 1px solid rgba(201, 162, 74, .25);
   color: var(--warm-white);
 }
@@ -192,7 +192,7 @@ a { color: inherit; }
 .hours dt { font-weight: 500; }
 .hours dd { margin: 0; color: var(--muted); }
 address { font-style: normal; margin-bottom: 1em; }
-.contact a { color: var(--charcoal); text-decoration-color: var(--gold); text-underline-offset: 3px; overflow-wrap: anywhere; }
+.contact a { display: inline-block; padding: 4px 0; color: var(--charcoal); text-decoration-color: var(--gold); text-underline-offset: 3px; overflow-wrap: anywhere; }
 .contact { margin-bottom: 1.6em; }
 
 /* ---------- Footer ---------- */
@@ -393,6 +393,7 @@ address { font-style: normal; margin-bottom: 1em; }
 @media (max-width: 860px) {
   .about-inner, .visit-inner { grid-template-columns: 1fr; gap: 32px; }
   .footer-inner { grid-template-columns: 1fr; }
+  .site-footer { padding-bottom: 104px; } /* keep copyright clear of the chat button */
 }
 
 @media (max-width: 720px) {
@@ -401,6 +402,7 @@ address { font-style: normal; margin-bottom: 1em; }
   .logo { justify-content: center; }
   .nav { justify-content: center; flex-wrap: wrap; gap: 8px 20px; }
   .nav .btn-small { display: none; }
+  .nav a:not(.btn) { padding: 8px 6px; margin: -8px -6px; } /* bigger tap area, same layout */
 }
 
 @media (max-width: 400px) {
@@ -423,6 +425,11 @@ address { font-style: normal; margin-bottom: 1em; }
     border-bottom: 0;
   }
   body.chat-open .chat-fab { display: none; }
+}
+
+/* Landscape phones: use the full height beside the chat button */
+@media (max-height: 500px) and (min-width: 481px) {
+  .chat-panel { bottom: 12px; right: 96px; height: calc(100dvh - 24px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
